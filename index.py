@@ -1,9 +1,11 @@
 
-import csv
 
-with open("hello.csv", 'r') as f:
-    reader = csv.reader(f)
-    content = list(reader)
+three = []
 
-    for item in content:
-        print(f"{item[0]} got a {item[2]} in {item[3]}")
+with open('assets/school_prompt.txt', 'r') as f:
+
+    for line in f:
+        
+        print(line.strip())
+
+
